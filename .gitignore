@@ -1,0 +1,4 @@
+.sublime-gulp.cache
+JaSMIn.sublime-workspace
+node_modules/
+dist/

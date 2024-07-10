@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+  },
+  "exclude": [
+    "dist",
+    "doc",
+    "misc",
+    "node_modules",
+    "ressources",
+    "**/webpack*.js"
+  ]
+}

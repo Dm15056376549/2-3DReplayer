@@ -1,0 +1,50 @@
+{
+  "name": "jasmin",
+  "version": "0.4.0",
+  "description": "Javascript Soccer Monitor Interface - A webgl based monitor for the RoboCup 2D and 3D soccer simulation league.",
+  "main": "dist/js/JaSMIn.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "clean": "rm -r dist",
+    "dev": "concurrently --names \"WEBPACK,HTTP\" -c \"bgBlue.bold,bgGreen.bold\" \"webpack --watch --progress --mode development\" \"http-server ./dist -c-1 -p 8080\"",
+    "dev-php": "concurrently --names \"WEBPACK,PHP\" -c \"bgBlue.bold,bgGreen.bold\" \"webpack --watch --progress --mode development\" \"php -t ./dist -S localhost:8080\"",
+    "http": "http-server ./dist -c-1 -p 8080",
+    "php": "php -t ./dist -S localhost:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/robocup-sim/JaSMIn.git"
+  },
+  "keywords": [
+    "RoboCup",
+    "soccer simulation",
+    "replay",
+    "monitor",
+    "stream",
+    "web player",
+    "web monitor"
+  ],
+  "author": "Stefan Glaser",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/robocup-sim/JaSMIn/issues"
+  },
+  "homepage": "https://robocup-sim.gitlab.io/JaSMIn/",
+  "devDependencies": {
+    "@types/three": "^0.93.31",
+    "concurrently": "^7.6.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.11.0",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "pako": "^2.1.0",
+    "sass": "^1.77.6",
+    "sass-loader": "^12.6.0",
+    "three": "^0.98.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.10.0"
+  }
+}

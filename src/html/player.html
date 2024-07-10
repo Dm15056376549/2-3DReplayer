@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JaSMIn - Watch RoboCup Soccer Simulation Matches</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/JaSMIn.css" />
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/pako_inflate.min.js"></script>
+    <script type="text/javascript" src="js/JaSMIn.js"></script>
+    <style>
+      #viewport {
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      #welcome-text {
+        color: silver;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="viewport">
+      <span id="welcome-text">Loading JaSMIn player...</span>
+    </div>
+  </body>
+
+  <!-- Run the JaSMIn player -->
+  <script language="javascript">
+    const params = {
+      embedded: false,
+      archives: [{url: 'archive.php', name: 'Test Archive'}]
+    };
+
+    // Create and run player
+    monitor = new JaSMIn.Monitor(document.getElementById('viewport'), params);
+  </script>
+</html>

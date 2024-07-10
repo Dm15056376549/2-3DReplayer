@@ -1,0 +1,12 @@
+{
+  "type": "playlist",
+  "title": "RC20XX XDSim RoundX - GroupX",
+  "gamelogs": [
+    { "title": "Game log 2D-1 (replay)", "url": "archive\/2D Simulation\/test2d.replay"},
+    { "title": "Game log 2D-2 (replay)", "url": "archive\/2D Simulation\/201006221147-ESKILAS_5-vs-HfutEngine_1.replay"},
+    { "title": "Game log 2D-3 (rcg)", "url": "archive\/rcg\/201006221147-ESKILAS_5-vs-HfutEngine_1.rcg"},
+    { "title": "Missing Game log", "url": "archive\/na.replay"},
+    { "title": "Game log 3D-1", "url": "archive\/3D Simulation\/test25Hz.rpl3d"},
+    { "title": "Invalid Entry (CORS)", "url": "http:\/\/archive.robocup.info\/soccer\/simulation\/3D\/events\/WorldCup\/2016\/replays\/Final\/201607031236_FUT-K_0_vs_UTAustinVilla_2.rpl3d.gz"}
+  ]
+}

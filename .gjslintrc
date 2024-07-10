@@ -1,0 +1,3 @@
+--exclude_directories=dist,node_modules
+--exclude_files=gulpfile.js
+--max_line_length=160
