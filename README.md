@@ -33,9 +33,14 @@ _player.html_运行JaSMIn的独立版本，而_embedded.html_运行具有缩减�
 
 ```bash
 npm run http
+···
+Server running at http://localhost:8080
+···
+```bash
 或者 - 如果您需要php支持 - 只需运行：
 
 npm run php
+```
 然后在浏览器中导航到：localhost:8080/dist/player.html。
 
 部署
